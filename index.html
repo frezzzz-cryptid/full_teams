@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ФУЛЛ ТИМА</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ФУЛЛ ТИМА</h1>
+                <p>Лучшее за год в одном месте</p>
+            </div>
+            
+            <nav>
+                <button class="nav-btn active" data-section="memes">
+                    <i class="fas fa-laugh-squint"></i> Мемы года
+                </button>
+                <button class="nav-btn" data-section="tracks">
+                    <i class="fas fa-music"></i> Треки
+                </button>
+                <button class="nav-btn" data-section="members">
+                    <i class="fas fa-users"></i> Участники
+                </button>
+                <button class="nav-btn" data-section="about">
+                    <i class="fas fa-info-circle"></i> О команде
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="memes">
+            <h2>Мемы года</h2>
+            <div class="section-content">
+                <div class="card">
+                    <video src="1.mp4" alt="Мем 1" class="card-img" controls>
+                    <div class="card-content">
+                        <h3>Это катастрофа!</h3>
+                        <p>Самый популярный мем января, набравший более 2 миллионов репостов.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <video src="Айназ супер гей.mp4" alt="Мем 2" class="card-img" controls>
+                    <div class="card-content">
+                        <h3>Когда дедлайн</h3>
+                        <p>Мем про студентов и сдачу проектов стал вирусным в учебных заведениях.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <video src="трио.mp4" alt="Мем 3" class="card-img" controls>
+                    <div class="card-content">
+                        <h3>Котик-программист</h3>
+                        <p>Милое фото кота за компьютером взорвало интернет в марте.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tracks">
+            <h2>Треки года</h2>
+            
+            <div class="tracks-list">
+                <div class="track-card">
+                    <div class="track-number">01</div>
+                    <div class="track-info">
+                        <h3>Варёнка дяди севы</h3>
+                        <p>ФУЛЛ ТИМА feat. MC Сева | 3:33</p>
+                        
+                        <!-- Аудиоплеер -->
+                        <div class="audio-player">
+                            <div class="audio-controls">
+                                <button class="play-pause-btn" data-audio="track1">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <div class="volume-control">
+                                    <i class="fas fa-volume-up volume-icon"></i>
+                                    <input type="range" min="0" max="100" value="70" class="volume-slider">
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="time-display">0:00 / 0:00</div>
+                            </div>
+                        </div>
+                        <!-- Аудио элемент -->
+                        <audio id="track1" preload="metadata">
+                            <source src="track1.mp3" type="audio/mpeg">
+                            Ваш браузер не поддерживает аудио элемент.
+                        </audio>
+                    </div>
+                </div>
+                
+                <div class="track-card">
+                    <div class="track-number">02</div>
+                    <div class="track-info">
+                        <h3>Скоро будет</h3>
+                        <p>Скоро будет</p>
+                        
+                        <!-- Аудиоплеер -->
+                        <div class="audio-player">
+                            <div class="audio-controls">
+                                <button class="play-pause-btn" data-audio="track2">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <div class="volume-control">
+                                    <i class="fas fa-volume-up volume-icon"></i>
+                                    <input type="range" min="0" max="100" value="70" class="volume-slider">
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="time-display">0:00 / 0:00</div>
+                            </div>
+                        </div>
+                        <!-- Аудио элемент -->
+                        <audio id="track2" preload="metadata">
+                            <source src="track2.mp3" type="audio/mpeg">
+                            Ваш браузер не поддерживает аудио элемент.
+                        </audio>
+                    </div>
+                </div>
+                
+                <div class="track-card">
+                    <div class="track-number">03</div>
+                    <div class="track-info">
+                        <h3>Скоро будет</h3>
+                        <p>Скоро будет</p>
+                        
+                        <!-- Аудиоплеер -->
+                        <div class="audio-player">
+                            <div class="audio-controls">
+                                <button class="play-pause-btn" data-audio="track3">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <div class="volume-control">
+                                    <i class="fas fa-volume-up volume-icon"></i>
+                                    <input type="range" min="0" max="100" value="70" class="volume-slider">
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="time-display">0:00 / 0:00</div>
+                            </div>
+                        </div>
+                        <!-- Аудио элемент -->
+                        <audio id="track3" preload="metadata">
+                            <source src="cnjyyy.mp3" type="audio/mpeg">
+                            Ваш браузер не поддерживает аудио элемент.
+                        </audio>
+                    </div>
+                </div>
+                
+                <div class="track-card">
+                    <div class="track-number">04</div>
+                    <div class="track-info">
+                        <h3>Скоро будет</h3>
+                        <p>Скоро будет</p>
+                        
+                        <!-- Аудиоплеер -->
+                        <div class="audio-player">
+                            <div class="audio-controls">
+                                <button class="play-pause-btn" data-audio="track4">
+                                    <i class="fas fa-play"></i>
+                                </button>
+                                <div class="volume-control">
+                                    <i class="fas fa-volume-up volume-icon"></i>
+                                    <input type="range" min="0" max="100" value="70" class="volume-slider">
+                                </div>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="time-display">0:00 / 0:00</div>
+                            </div>
+                        </div>
+                        <!-- Аудио элемент -->
+                        <audio id="track4" preload="metadata">
+                            <source src="track4.mp3" type="audio/mpeg">
+                            Ваш браузер не поддерживает аудио элемент.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="members">
+            <h2>Участники</h2>
+            <div class="section-content">
+                <div class="card member-card">
+                    <img src="юсуф.jpg" alt="Иван" class="member-img">
+                    <h3>Юсуф</h3>
+                    <div class="member-role"></div>
+                    <p>Юсуф — основатель и лидер великой команды "Фулл Тима". Благодаря своей мудрости, харизме и справедливости он собрал талантливую группу единомышленников, превратив её в дружную семью. Юсуф ведет своё племя вперёд, вдохновляет и мотивирует участников достигать новых высот, воплощая идеи добра, творчества и единства.</p>
+                </div>
+                 <div class="card member-card">
+                    <img src="Амир.jpg" alt="Иван" class="member-img">
+                    <h3>Амир</h3>
+                    <div class="member-role"></div>
+                    <p>Амир - лампочка нашей фулл тимы , он одновременно гениален и одновременно не очень. он светит так ярко , как в фулл тиме не светит никто... (P.s у него фары слепят). но это не мешает ему проводить время с нашей любимой фулл тимой.</p>
+                </div>
+                <div class="card member-card">
+                    <img src="була.jpg" alt="Иван" class="member-img">
+                    <h3>Булат</h3>
+                    <div class="member-role">1</div>
+                    <p>Булат, участник команды "Фулл Тима", славился своим особым даром: он умел создавать волшебные конфеты. Эти лакомства могли подарить любому человеку ощущение счастья и гармонии. Чтобы избежать злоупотреблений, Булат стал фасовать конфеты небольшими порциями по 500 грамм и устроил необычный квест перед покупкой. Желающие попасть к Булату проходили интересные задания и загадки, проверяя свою готовность принять частичку волшебства. Таким образом, простой парень превратил продажу сладостей в настоящее приключение, сделав мир немного радостнее и светлее.</p>
+                </div>
+                <div class="card member-card">
+                    <video src="айназ мега геймер.mp4" alt="Мария" class="member-img" autoplay>
+                    <h3>Айназ</h3>
+                    <div class="member-role"></div>
+                    <p>Айназ — мужское имя тюркского происхождения. Относится к русской, татарской, башкирской народностям, чаще всего встречается в восточных мусульманских странах.</p>
+                </div>
+                <div class="card member-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=fb002f7fd3b272f0689c0dc6cbae113e_sr-11395806-images-thumbs&n=13" alt="Алексей" class="member-img">
+                    <h3>Данис</h3>
+                    <div class="member-role">Таджик</div>
+                    <p>Он прибыл из Таджикистана и его хотели депортировать и мы конечно его приютили теперь он в нашем подвале.</p>
+                </div>
+                <div class="card member-card">
+                    <img src="i.webp" alt="Иван" class="member-img">
+                    <h3>Дима</h3>
+                    <div class="member-role"></div>
+                    <p>Дима - (Водолаз), был найден в водосточной трубе январским утром, он чинил трубы и нырял в колодец, позже его заметили , и приютили, с тех пор он является участником "фулл тимы"</p>
+                </div>
+                <div class="card member-card">
+                    <img src="https://i.ytimg.com/vi/i0ux0sqdRpU/maxresdefault.jpg" alt="Иван" class="member-img">
+                    <h3>Сева</h3>
+                    <div class="member-role"></div>
+                    <p>Сева- всемирный производитель варёнки. Он производит столько варёнки, что хватило бы на всю планету земля. Его производства поражают своимим масштабами. Его рабочая сила - дети. Ведь дети, самые лучшие работники , им не нужна ни вода, ни еда, ну по крайне мере Сева так считает... В фулл тиме он хороший (наверное) предприниматель.</p>
+                </div>
+            </div>
+        </section>
+          <h1>🎬 Горизонтальный слайдер видео</h1>
+
+    <div class="slider-container">
+        <!-- Кнопки навигации -->
+        <button class="van-btn van-left" id="scrollLeft" aria-label="Листать влево">‹</button>
+        <button class="van-btn van-right" id="scrollRight" aria-label="Листать вправо">›</button>
+
+        <!-- Горизонтальный слайдер с видео -->
+        <div class="video-slider" id="videoSlider">
+            <!-- Карточка 1 -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video controls preload="metadata" poster="Айназ супер гей.mp4" >
+                        <source src="Айназ супер гей.mp4"  >
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Кристальный ручей</div>
+                    <div class="video-description">
+                        <span>MP4</span>  ·  Природа, 4K
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video controls preload="metadata" poster="donky.mp4">
+                        <source src="donky.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Городской трафик</div>
+                    <div class="video-description">
+                        <span>MP4</span>  ·  Улица, время lapse
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 3 (YouTube-подобный, но используем локальное видео, добавим ещё пример) -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/640x360/332b5a/ffffff?text=Demo">
+                        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Большой кролик</div>
+                    <div class="video-description">
+                        <span>HD</span>  ·  Анимация
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/640x360/403775/ffffff?text=Travel">
+                        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Слоновья мечта</div>
+                    <div class="video-description">
+                        <span>4K</span>  ·  Документальный
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="video-card">
+                <div class="video-wrapper">
+                    <video controls preload="metadata" poster="https://via.placeholder.com/640x360/4e428a/ffffff?text=For+rest">
+                        <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-info">
+                    <div class="video-title">Дикая природа</div>
+                    <div class="video-description">
+                        <span>Full HD</span>  ·  Экстрим
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <section id="about">
+            <h2>О команде</h2>
+            <div class="card">
+                <div class="card-content">
+                    <h3>ФУЛЛ ТИМА - это стиль жизни</h3>
+                    <p>В небольшом городе, жил Юсуф . Он всегда мечтал о том, чтобы собрать вокруг себя настоящую команду друзей, с которыми можно было бы проводить время, делиться идеями и просто весело проводить дни. 
+
+Однажды, гуляя по парку, Юсуф встретил Амира, своего давнего друга. Юсуф предложил ему стать частью его новой дружеской компании. Амир с радостью согласился и начал рассказывать о своих друзьях.
+
+Первым, кого они пригласили, был Дима . Его энергия вдохновляла всех вокруг, а ещё он был водолазом . Затем к ним присоединилась Айназ — креативная и талантливая девушка, которая всегда знала, как украсить любой момент и сделать его незабываемым.
+
+Следующим стал Сева у него свое производство варенки в подвале . Кузя, известный таджик под прикрытием . Он умел находить общий язык с каждым и всегда был готов прийти на помощь.
+
+И, наконец, Булатка шоколадка. Он был тем, кто всегда поддерживал и подбадривал остальных, даже в самые трудные моменты.
+
+Собравшись вместе, Юсуф и его друзья решили назвать свою компанию "Фулл Тима". Они стали проводить время вместе, устраивать пати на кровати, организовывать бдсм игры и просто гулять по городу. Каждый из них привносил что-то уникальное в группу, и их дружба становилась крепче с каждым днем.
+
+"Фулл Тима" стала не просто компанией друзей, а настоящей семьей, где каждый мог быть собой, делиться мечтами и поддерживать друг друга. Вместе они создавали незабываемые моменты, которые останутся в их сердцах на всю жизнь.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <h1>ФУЛЛ ТИМА</h1>
+            </div>
+            <p>© 2023 ФУЛЛ ТИМА. Все права защищены.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+
+
+  
